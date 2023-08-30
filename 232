@@ -1,60 +1,96 @@
-import java.util.ArrayList;
+import java.io.IOException;
+import java.util.LinkedList;
+import java.util.Queue;
 import java.util.Scanner;
 
-public class Solution {
-	static Scanner sc = new Scanner(System.in);
-	static ArrayList<Integer>[] alist;
-	public static void main(String[] args) {
-		int T = sc.nextInt();
-		for(int tc=1;tc<=T;tc++) {
-			int V = sc.nextInt();
-			int E = sc.nextInt();
-			int A = sc.nextInt();
-			int B = sc.nextInt();
-			int[] arr = new int[V+1]; // 간선 시작번호 저장할 공간
-			alist = new ArrayList[V+1]; // 리스트를 v+1개 만듬
-			for(int i=0;i<=V;i++) {
-				alist[i] = new ArrayList<>();
+public class Main {	
+	static int[][] arr;
+	static boolean flag;
+	static int N;
+//	static Queue<Integer> qx;
+//	static Queue<Integer> qy;
+	static int move; // 움직이는 횟수
+	
+	public static void main(String[] args) throws IOException {		
+		Scanner sc = new Scanner(System.in);
+		N = sc.nextInt();
+		arr = new int[N][N];
+		int level = 2; // 현재 레벨
+		move = 0;
+		
+		for(int i =0;i<N;i++) {
+			for(int j=0;j<N;j++) {
+				arr[i][j] = sc.nextInt();				
 			}
-			for(int i=0;i<E;i++) {
-				int tmp1 = sc.nextInt(); //시작
-				int tmp2 = sc.nextInt(); //종료 노드
-				arr[tmp2] = arr[tmp1]; // 각 노드에 해당하는 부모노드의 번호 저장
-				alist[tmp1].add(tmp2); // 시작하는 노드번째 리스트에 tmp2를 저장 (시작노드에서 여러개로 향할수있음)
-			}			
-			int[] p1 = new int[V+1]; // 부모노드 나온것에 1로
-			int tem = 0; // 공통조상
-			tem = arr[A]; // arr[A]의 값이 A의 부모노드 값
-			while(true) {
-				p1[tem]++;
-				
-				tem = arr[tem];				
-				if(tem ==0) {
-					break;
-				}
-			}
-			tem =arr[B];
-			while(true) {
-				if(p1[tem]==0) {
-					break;
-				}
-				tem = arr[tem];				
-			}
-			// tem은 최적의 부모 노드 번호
-			
-			
-			System.out.println("#"+tc+" "+tem+" "+cnt(0));
-		}		
-		
-		
-		
-		
-	}
-	static int cnt(int tem) {
+		} 
+		// 입력완료
 		int cnt=0;
-		if(alist[tem].size()>=1) cnt+=cnt(alist[tem].get(0)); //왼쪽에 자식이 있으면 간다.
-	    if(alist[tem].size()>=2) cnt+=cnt(alist[tem].get(1)); //오른쪽에 자식이 있으면 간다.
-	        return cnt+1; //왼쪽 + 오른쪽 + 본인
+		while(true) {
+			boolean flag = false;
+			move(level);
+			System.out.println(cnt);
+			if(!flag) {
+				break;
+			}
+			cnt ++;
+			if(cnt== level) {
+				level++;
+				cnt=0;
+			}
+
+		}
+		System.out.println(move);
+
+
+
+	}
+	public static void move(int level) {
+		int[] dx = {-1,0,0,1};
+		int[] dy = {0,-1,1,0};
+		int sx =0;
+		int sy=0;
+	Queue<Integer> qx = new LinkedList<Integer>();
+	Queue<Integer> qy = new LinkedList<Integer>();
+		for(int i =0;i<N;i++) {
+			for(int j=0;j<N;j++) {					
+				if(arr[i][j] == 9) {
+					qx.add(i);
+					qy.add(j);
+					sx = i;
+					sy = j;
+					arr[i][j] = 0;
+				}
+			}
+		} 		
+		a :while(true) {
+			int x = qx.poll();
+			int y = qy.poll();
+			System.out.println(x+" "+y+" "+move);
+			for(int in=0;in<3;in++) {
+				if(x+dx[in]>=0 && x+dx[in]<N && y+dy[in]>=0 && y+dy[in]<N) {
+					if(arr[x+dx[in]][y+dy[in]] ==0 || arr[x+dx[in]][y+dy[in]]==level) {
+						qx.add(x+dx[in]);
+						qy.add(y+dy[in]);
+					}
+					else if(arr[x+dx[in]][y+dy[in]]	>0 && arr[x+dx[in]][y+dy[in]]<level) {
+						x = x+dx[in];
+						y = y+dy[in];						
+						move+= Math.abs(sx-x)+Math.abs(sy-y);
+						arr[x][y] = 9;
+						qx.clear();
+						qy.clear();
+						flag = true;
+						break a;
+					}					
+				}
+				
+			}
+			if(qx.size()==0 || qx.size()>N*N) {
+				break;
+			}
+			
+		}
+
 	}
 	
 
