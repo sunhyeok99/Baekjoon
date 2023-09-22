@@ -1,67 +1,53 @@
-import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.HashSet;
 import java.util.LinkedList;
+import java.util.Map;
 import java.util.Queue;
 import java.util.Scanner;
 
-
-public class Solution {
+public class Main {
 	static int N;
-	static int M;
-	static int[][] arr;
-	static boolean[] flag;
-	static ArrayList<Integer>[] ans;
-	static Queue<Integer> q;
-	static int max;
-	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
-		for(int tc=1;tc<=10;tc++) {
-			N = sc.nextInt();
-			M = sc.nextInt();
-			arr = new int[101][101];
-			ans = new ArrayList[101];
-			for(int i =0;i<101;i++) {
-				ans[i] = new ArrayList<>();
-			}
-			q = new LinkedList<>();
-			for(int i =0;i<N/2;i++) {
-				int a = sc.nextInt();
-				int b = sc.nextInt();
-				ans[a].add(b);
-			}
-
-			flag = new boolean[101];
-			flag[M] = true;
-			q.add(M);
-			max = 0;
-			solve();
+	static int ans;
+	public static void main(String[] args) {		
+		Scanner sc = new Scanner(System.in);	
+		int T  =sc.nextInt();
+		for(int tc=1;tc<=2;tc++) {
 			
-			
-
-			System.out.println("#"+tc+" "+max);
+		N = sc.nextInt();
+		HashMap<String, Integer> hash = new HashMap<>();
+		for(int i =0;i<N;i++) {
+			String a = sc.next();
+			String b = sc.next();
+			if(hash.containsKey(b)) {
+				hash.put(b, hash.get(b)+1);
+			}
+			else {
+				hash.put(a, 1);
+			}
+			// 해쉬맵을 이용해서
+			// 기존에 존재하는 종류이면
+			// 값을 1만 +1해주고
+			// 처음들어오는 옷종류이면
+			// 새롭게 종류를 만들어주고
+			// 값을 1로 설정
 		}
-	}
-	public static void solve() {
-		while(true) {
-			int idx = q.poll();
-			boolean tmp = false;
-			for(int i =0;i<ans[idx].size();i++) {
-				if(!flag[ans[idx].get(i)]) {
-					flag[ans[idx].get(i)] = true;
-					q.add(ans[idx].get(i));
-					tmp = true;
-				}
-			}
-			if(!tmp) {
-				if(max<idx) {
-					max = idx;
-				}
-			}
-			if(q.size()==0) {
-				
-				break;
-			}
+		
+		// 이상태에서 2 ,1 이면 
+		// 3x2 -1 이 결과 값
+		int ans = 1;
+		for(Map.Entry<String, Integer> h : hash.entrySet()) {
+			ans *=h.getValue();
 		}
+		
+		System.out.println(ans-1);
+		
+		
+		
+		
+		
+		
 
+		}
 	}
 
 }
