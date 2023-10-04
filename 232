@@ -1,61 +1,99 @@
+import java.util.LinkedList;
+import java.util.Queue;
 import java.util.Scanner;
 
 public class Main {
-
-	static String N;
-	static int[] arr;
-	static int ans;
+	static int N;
+	static int[][] arr;
+	static boolean[] flag;
+	static Queue<Integer> qx;
+	static Queue<Integer> qy;
+	static boolean ans;
 	public static void main(String[] args) {
-		// 행운의 문자열 1342  실버 1
-		// 인접해 있는 문자가 모두 같지 않은 문자열 --> 행운의 문자열 
-		// ex) abababa , ab , acde 
-		// 이 경우는 x -> aab  - aa가 붙어있음
+		// 맥주 마시면서 걸어가기 //  골드 5 // 9205
+		// 첫째줄에 t입력 
+		// 각 테스트 케이스마다 편의점의 개수
+		// 집, 편의점(개수만큼), 페스티벌의 좌표 순서대로 입력
 		
-		// 먼저 문자열을 입력받아
-		// arr 배열에 현재 문자의 개수만큼
-		// ++ 해주고 
-		// 재귀 돌려서 직접 다 세기
-		Scanner sc = new Scanner(System.in);	
-		N = sc.next(); // N을 입력받고 알파벳은 총 26개로
-		// arr 배열은 26개를 선언해준다
-		// (알파벳 소문자이므로 각 0~26값을 가지도록 하려고 int배열 선언)
-		arr = new int[26]; // 직접 세보니 26개		
-		for(int i =0;i<N.length();i++) {
-			arr[N.charAt(i) - 'a']++; // 위 값은 0을 제외하고 ab가 있다면
-			// 0번째 배열과 1번째 배열이 1의 값을 가진다.
-			// 위상정렬 푸는 것처럼 (degree라 생각)
-		}
-		ans = 0;
-		// 문자열 저장 완료
-		solve(0,0);
-		System.out.println(ans);
-	}
-	// 개수와 시작점인 idx
-	public static void solve(int cnt,int idx) {
-		if(cnt==N.length()) {
-			// cnt개수만큼 모두 결과가 제대로 만들어졌으면
-			// ans를 +1해주고 return해준다.
-			ans++;
-			return;
-		}
-		// 알파벳 순으로 재귀를 돌려보자 
-		for(int i=0;i<26;i++) {
-			// 먼저 알파벳이 있어야 하고 , 전에 알파벳이 지금 들어갈 알파벳과 달라야함
+		// 집의 위치를 큐에다 넣고 시작하며
+		// 50m당 맥주 1개로 총 20개가 한 박스에 존재하므로
+		// 1000m까지 이동이 가능
+		// 집에서 1000이내로 편의점이 존재하면 
+		// 편의점의 위치를 큐에다 넣고 그 위치에서 또 탐색
+		// 이 과정중에 페스티벌 발견하면 happy
+		Scanner sc = new Scanner(System.in);
+		int T = sc.nextInt(); // 테스트케이스 t 입력
+		for(int tc=1;tc<=T;tc++) {
+			qx = new LinkedList<>(); // 큐에 넣을 좌표(현재위치)
+			qy = new LinkedList<>();
+			N = sc.nextInt();			
+			qx.add(sc.nextInt());
+			qy.add(sc.nextInt());
+			// 시작화는 좌표 그대로
+			// 큐에 넣고 시작한다.
 			
-			// 1. 먼저 현재 arr배열의 값이 0이 아니어야함
-			// 2. 다음에 올 값이 현재의 값과 달라야함 
-			// (중요한 것은 첫번쨰에 a가 올 경우에는 제외- a가 무조건 있는 조건에서)
-			
-			// 이렇게 될경우 맨처음이 0으로 시작해서 첫번째 알파벳이
-			// a가 와야할경우가 불가능하기 때문에
-			// cnt==0일 때는 예외로 가능하게 처리
-			if(arr[i]!=0 && (idx!=i || cnt ==0)) {
-				arr[i] --;
-				solve(cnt+1,i); // 개수는 +1시켜주고 현재 알파벳 반환
-				// 재귀로 현재 알파벳을 포함하지 않는 경우에는 다시 +해줌 
-				arr[i]++; // 포함안할 경우 +1;
+			arr = new int[N+1][2];
+			// x좌표 y좌표 저장 (도착지 포함)
+			for(int i =0;i<=N;i++) {
+				for(int j =0;j<2;j++) {
+					arr[i][j] = sc.nextInt();
+				}
 			}
+			// 편의점, 도착지 좌표 입력 끝
+			
+			flag = new boolean[N]; // 편의점 방문 여부 확인
+			ans = false; // 처음 기존의 값을 false로 두고
+			// 만약 페스티벌 가면 true로 바꿔줌
+			
+			solve();
+			if(ans) {
+				System.out.println("happy");
+			}
+			else {
+				System.out.println("sad");
+			}
+			
 		}
-
+		
+		
+		
 	}
+	public static void solve() {
+		while(true) {
+			int nx = qx.poll();
+			int ny = qy.poll();
+			// 큐에 있는 좌표를 꺼내서
+			// 1000거리 이하의 좌표를 모두 큐에 넣는다.
+			// 이 과정을 반복하는 과정중에
+			// 도착지와의 거리가 1000이하면
+			// ans를 true로 바꿔주고 
+			// return // 아니면 큐가 비어서 false
+			if(Math.abs(nx-arr[N][0])+Math.abs(ny-arr[N][1])<=1000) {
+				ans = true;
+				return;
+				// 현재의 위치에서 거리의 값이 
+				// 도착지와 거리가 1000이하면 true
+			}
+			// 편의점 거리 1000이하 탐색 
+			// n번째는 위에서 확인하기 때문에 N보다 작은값만 탐색
+			for(int i =0;i<N;i++) {
+				if(!flag[i] && (Math.abs(nx-arr[i][0])+Math.abs(ny-arr[i][1])<=1000)) {
+					// 만약 1000이하에 방문하지 않은 편의점이 존재한다면
+					// true로 바꿔주고 큐에다가 좌표를 넣는다.
+					flag[i] =true;
+					qx.add(arr[i][0]);
+					qy.add(arr[i][1]);				
+				}
+			}
+			if(qx.size()==0) {
+				// 더이상 갈곳이 없을때 return
+				return;
+			}
+			
+		}
+		
+	}
+	
+	
+	
 }
