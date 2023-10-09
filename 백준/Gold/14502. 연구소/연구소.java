@@ -8,7 +8,6 @@ public class Main {
 	static int N; // NxN
 	static int M; // NxN
 	static int[][] arr;
-	static int[][] arr2;
 	static ArrayList<Integer> vx;
 	static ArrayList<Integer> vy; // 바이러스 좌표
 	static boolean[][] flag;
@@ -43,6 +42,7 @@ public class Main {
 			// 먼저 flag 초기화를 시키고
 			// 메서드 실행
 			flag = new boolean[N][M];		
+			count = 0;
 			solve();
 			return;
 		}
@@ -66,27 +66,14 @@ public class Main {
 		// 바이러스 좌표를 넣을 ax와 ay를 선언해주고
 		// for문을 통해서
 		// 바이러스를 만나면 큐에다가 넣어준다.
-		 arr2 = new int[N][M];
-	        // arr2 만드는 이유
-	        // 벽이 세개 세워질 때마다 bfs를 실행해야하므로
-	        // 벽이 세워진 map을 복사해서 써야함 (초기화 용도)
-	        for (int i = 0; i < N; i++) {
-	            for (int j = 0; j < M; j++) {
-	                arr2[i][j] = arr[i][j];
-	                if (arr2[i][j] == 2) {
-	                	ax.add(i);
-	                	ay.add(j);
-	                }
-	            }
-	        }
-//		for(int i =0;i<N;i++) {
-//			for(int j =0;j<M;j++) {
-//				if(arr[i][j]==2) {
-//					ax.add(i);
-//					ay.add(j);					
-//				}
-//			}
-//		}
+		for(int i =0;i<N;i++) {
+			for(int j =0;j<M;j++) {
+				if(arr[i][j]==2) {
+					ax.add(i);
+					ay.add(j);					
+				}
+			}
+		}
 		// 이제 바이러스 좌표를 큐에다 다 넣었으니
 		// bfs 시작
 		while(true) {
@@ -96,10 +83,10 @@ public class Main {
 				int nx = x+dx[in];
 				int ny = y+dy[in];
 				// 범위를 만족하고 벽이며 현재 방문하지 않았으면 
-				if(nx>=0 && ny>=0 && nx<N && ny<M && arr2[nx][ny]==0 ) {
+				if(nx>=0 && ny>=0 && nx<N && ny<M && arr[nx][ny]==0 && !flag[nx][ny]) {
 					ax.add(nx);
 					ay.add(ny);
-					arr2[nx][ny] = 2;
+					flag[nx][ny] = true;
 					// 큐에다가 현재 위치를 넣어주고
 					// 현재 위치는 방문처리 해줌
 				}				
@@ -113,10 +100,9 @@ public class Main {
 		}
 		// 이제 바이러스처리를 다 했으므로 
 		// 방문이 안되고 0인 것들의 개수를 count한다.
-		count = 0;
 		for(int i =0;i<N;i++) {
 			for(int j =0;j<M;j++) {
-				if(arr2[i][j]==0) {
+				if(arr[i][j]==0 && !flag[i][j]) {
 					count++;
 				}
 			}
