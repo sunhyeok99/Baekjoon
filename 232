@@ -1,55 +1,55 @@
-import java.util.LinkedList;
-import java.util.Queue;
 import java.util.Scanner;
 
 public class Main {
 	static int N;
-	static int[] dp;
-	static int A;
-	static int B;
+	static int[] arr;
+	static int[] c1;
+	static int[] c2;
+	static int[] c3;
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		N = sc.nextInt();
-		int cnt = sc.nextInt();
+		 N = sc.nextInt();
+		// string으로 각각  a b c 해놓고
+		 // 값을 입력받고 서로 다르게 해놓음
+		 // dp를 통해 누적값이 
+		c1 = new int[N];
+		c2 = new int[N];
+		c3 = new int[N];
+		int[] dp1 = new int[N];
+		int[] dp2 = new int[N];
+		int[] dp3 = new int[N];
+		// 3가지 경우 생각함 
+		// 시작점이 c1, c2 ,c3일때 
+		for(int i = 0;i<N;i++) {
+			c1[i] = sc.nextInt();
+			c2[i] = sc.nextInt();
+			c3[i] = sc.nextInt();
+		}
 		
-		 dp = new int[N+1];
-		dp[N] = cnt;
-	
-	
-		// n=1이나 2일떄의 개수를 세보자 
+		dp1[0] = c1[0];
+		dp2[0] = c2[0];
+		dp3[0] = c3[0];
+		int a = 987654321;
+		int b = 987654321;
+		int c = 987654321;
 		
-		A=0;
-		B=0;
-		solve(N);
+		for(int i = 1;i<N;i++) {			
+				dp1[i] = Math.min(dp2[i-1],dp3[i-1]) + c1[i];
+				dp2[i] = Math.min(dp1[i-1], dp3[i-1]) + c2[i];
+				dp3[i] = Math.min(dp1[i-1], dp1[i-1]) + c3[i];
+				if(i==N-1) {
+					a = Math.min(dp2[i], dp3[i]);
+					b = Math.min(dp1[i],dp3[i]);
+					c = Math.min(dp1[i],dp2[i]);
+				}
+		}
+		int ans = Math.min(a, Math.min(b, c));
+		// 마지막까지 하다가 N번째에는 1번째와 그 전꺼를 다르게 해야하기 떄문에
+		// 마지막을 1번째로 할경우에는 첫째항이 2인경우와 3인경우 2가지 비교
+		System.out.println(ans);
 		
-		System.out.println(A);
-		System.out.println(B);
 		
+		System.out.println(dp1[N-1]+" "+dp2[N-1]+" "+dp3[N-1]);
 	}
-	
-	
-	public static void solve(int day) {
-		if(day<1) {
-			return;
-		}
-		if(day==1) {
-			A++;
-			return;
-		}
-		if(day==2) {
-			B++;
-			return;
-		}
-		solve(day-1);
-		solve(day-2);
-		return;
-		
-	}
-		
-		
-		
-		
-	
-
 
 }
