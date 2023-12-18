@@ -40,6 +40,9 @@ public class Main {
     		ans = Math.min(ans, cnt);
     		return;
     	}
+    	if(cnt>ans) {
+    		return;
+    	}
     	
     	int tmp1 = Math.abs(a-arr[idx]); // 열려있는 문과 현재의 차이 
     	int tmp2 = Math.abs(b-arr[idx]);
