@@ -1,6 +1,9 @@
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.LinkedList;
 import java.util.Queue;
-import java.util.Scanner;
+import java.util.StringTokenizer;
 
 public class Main {
 	static int N;
@@ -24,10 +27,11 @@ public class Main {
 	static int ans1;
 	static int ans2;
 	static int ans3;
-	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
-		N = sc.nextInt();
-		M = sc.nextInt();
+	public static void main(String[] args) throws IOException {
+			BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+			StringTokenizer st = new StringTokenizer(br.readLine());
+	        N = Integer.parseInt(st.nextToken());
+	        M = Integer.parseInt(st.nextToken());
 		arr = new int[N][M];
 		q = new LinkedList<node>();
 		flag = new int[N][M];
@@ -39,13 +43,17 @@ public class Main {
 		ans3 = 0;
 
 		for(int i = 0;i<N;i++) {
+            st = new StringTokenizer(br.readLine());
 			for(int j=0;j<M;j++){
-				arr[i][j] = sc.nextInt();
+				arr[i][j] = Integer.parseInt(st.nextToken());
+				// 1번애들 만나면 true로 큐에다가 추가
+				// ans1 ++하고 1값 넣기
 				if(arr[i][j] ==1) {
 					q.add(new node(i,j,1,true));
 					ans1 ++;
 					flag[i][j] = 1;
 				}
+				// 2번바이러스도 1번처럼 하기
 				else if(arr[i][j] ==2) {
 					q.add(new node(i,j,1,false));
 					ans2++;
@@ -54,7 +62,9 @@ public class Main {
 			}
 		}
 		// 입력 끝
+		
 		solve();
+		
 		System.out.println(ans1+" "+ans2+" "+ans3);
 
 
@@ -63,6 +73,7 @@ public class Main {
 	}
 	static int[] dx = {1,-1,0,0};
 	static int[] dy = {0,0,1,-1};
+	
 	public static void solve() {
 		while(true) {
 			if(q.size()==0) {
@@ -107,7 +118,11 @@ public class Main {
 						ans1 ++;
 					}
 				}
-				//2번 바이러스는 그냥 0만나면 큐에추가
+				//2번 바이러스도 1번처럼
+				// 퍼져나갈 곳의 좌표에서
+				// 큐로한번 더 확인해서
+				// 같은시간에 1인애들이 있으면
+				// 3으로 갱신 
 				else {
 					boolean tmp = false;
 					for(int index= 0;index<4;index++) {
