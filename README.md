@@ -9,6 +9,7 @@ This is a auto push repository for Baekjoon Online Judge created with [BaekjoonH
 |모임관리|복지서비스|온라인교육|퍼즐게임|오른쪽정렬|짝맞추기게임|랭킹페이지|
 
 
-|![모임관리](https://github.com/slside/Baekjoon/assets/132821972/5ab2d12b-10e1-4135-9048-f6d4abe6c15e)|![복지서비스]https://github.com/slside/Baekjoon/assets/132821972/385ff0d7-61ad-49fc-b11e-fea60d7b727b)|
+|![모임관리](https://github.com/slside/Baekjoon/assets/132821972/5ab2d12b-10e1-4135-9048-f6d4abe6c15e)|![복지서비스]
+https://github.com/slside/Baekjoon/assets/132821972/385ff0d7-61ad-49fc-b11e-fea60d7b727b)|
 |:---:|:---:|
 |모임관리|복지서비스|
