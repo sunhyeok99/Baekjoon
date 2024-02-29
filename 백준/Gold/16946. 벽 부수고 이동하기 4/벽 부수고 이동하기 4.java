@@ -5,6 +5,7 @@ import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.util.ArrayDeque;
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.Queue;
 import java.util.StringTokenizer;
 
@@ -56,8 +57,8 @@ public class Main {
 
 	public static void setNum(int i, int j, int number) {
 		int count = 1;
-		Queue<Integer> inputx = new ArrayDeque<Integer>();
-		Queue<Integer> inputy = new ArrayDeque<Integer>();
+		Queue<Integer> inputx = new LinkedList<Integer>();
+		Queue<Integer> inputy = new LinkedList<Integer>();
 		inputx.add(i);
 		inputy.add(j);
 		flag[i][j] = number;
