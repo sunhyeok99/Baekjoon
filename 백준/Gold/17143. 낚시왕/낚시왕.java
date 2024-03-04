@@ -47,7 +47,18 @@ public class Main {
 		for(int i = 0;i<M;i++) {
 			int x = sc.nextInt()-1;
 			int y = sc.nextInt()-1;
-			ar[x][y].add(new node(x, y,sc.nextInt(),sc.nextInt(),sc.nextInt()));
+			int s = sc.nextInt();
+			int d = sc.nextInt();
+			int z = sc.nextInt();
+			// s를 미리 나눌 수 있음
+			if(d ==1 || d==2) {
+				// 4일경우 6 ,  3일경우4 -> 위아래로는 1번 사이는 2번들어감
+				s %= (R*2 -2);
+			}
+			else {
+				s %= (C*2 -2);
+			}
+			ar[x][y].add(new node(x, y,s,d,z));
 		}
 		// 입력받는 즉시 바로 리스트에 추가
 
