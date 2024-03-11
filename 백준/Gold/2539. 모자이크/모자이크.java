@@ -40,7 +40,7 @@ public static class node implements Comparable<node> {
         Collections.sort(ar);
         // 이분탐색 돌려서 높이설정
         int left = 1;
-        int right = Math.min(N,M);
+        int right = 100000;
         int mid =0;
         while(true){
             mid = (right + left)/2;
@@ -65,12 +65,12 @@ public static class node implements Comparable<node> {
 
     }
     static boolean solve(int len){
-        // 0번째부터 시작해서
+        int st = 0;
+        // 0부터 시작해서
         // len길이 동안 세보고
         // 그다음 길이부터 cnt+1해서
         // 다시 세서 총 몇개필요한지 구함
         int cnt = 0;
-        int st = 0;
         for(int i = 0; i < ar.size(); i++) {
             node n = ar.get(i);
             // 높이가 색종이 길이보다 길면 false
