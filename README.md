@@ -31,7 +31,7 @@
 |:---:|:---:|:---:|
 |Java|Spring Boot|MySQL|
 
-|![Postman](https://github.com/sunhyeok99/Baekjoon/assets/132821972/299cd1d8-5277-4809-a95c-c4a23dbf0e83){: width="30" height="30"}|<img src="[/img/myImg.png](https://github.com/sunhyeok99/Baekjoon/assets/132821972/2220cf95-98ce-422f-a288-b7d663f6c628)" width="30" height="30">|
+|![Postman](https://github.com/sunhyeok99/Baekjoon/assets/132821972/299cd1d8-5277-4809-a95c-c4a23dbf0e83){: width="30" height="30"}|<img src="https://github.com/sunhyeok99/Baekjoon/assets/132821972/2220cf95-98ce-422f-a288-b7d663f6c628" width="30" height="30">|
 |:---:|:---:|
 |Postman|Swagger|
 
