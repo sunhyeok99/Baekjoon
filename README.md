@@ -31,16 +31,11 @@
 |:---:|:---:|:---:|
 |Java|Spring Boot|MySQL|
 
-|![Postman](https://github.com/sunhyeok99/Baekjoon/assets/132821972/299cd1d8-5277-4809-a95c-c4a23dbf0e83){: width="30" height="30"}|![Sprinhg Boot](https://github.com/sunhyeok99/Baekjoon/assets/132821972/2220cf95-98ce-422f-a288-b7d663f6c628){: width="30" height="30"}|
+|![Postman](https://github.com/sunhyeok99/Baekjoon/assets/132821972/299cd1d8-5277-4809-a95c-c4a23dbf0e83){: width="30" height="30"}|<img src="[/img/myImg.png](https://github.com/sunhyeok99/Baekjoon/assets/132821972/2220cf95-98ce-422f-a288-b7d663f6c628)" width="30" height="30">|
 |:---:|:---:|
 |Postman|Swagger|
 
 ### Infra
 
-|![Java](https://camo.githubusercontent.com/ecd535b833a6520e8d8238ceffadb3b3dda6e854826193d419c305f3e52fee22/68747470733a2f2f70726f66696c696e61746f722e7269736861762e6465762f736b696c6c732d6173736574732f6a6176612d6f726967696e616c2d776f72646d61726b2e737667){: width="30" height="30"}|![Sprinhg Boot](https://github.com/sunhyeok99/Baekjoon/assets/132821972/9bf23036-21cf-4da6-9111-6efbcef767f0){: width="30" height="30"}|
-|:---:|:---:|
-|Java|Spring Boot|
-
-|![Postman](https://github.com/sunhyeok99/Baekjoon/assets/132821972/299cd1d8-5277-4809-a95c-c4a23dbf0e83){: width="250" height="450"}|![Sprinhg Boot](https://github.com/sunhyeok99/Baekjoon/assets/132821972/2220cf95-98ce-422f-a288-b7d663f6c628){: width="30" height="30"}|
-|:---:|:---:|
-|Postman|Swagger|
+<img src="/img/myImg.png" width="300" height="300">
+![Swagger](https://github.com/sunhyeok99/Baekjoon/assets/132821972/2220cf95-98ce-422f-a288-b7d663f6c628){: width="30" height="30"}|
