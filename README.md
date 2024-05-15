@@ -21,6 +21,6 @@
 
 ### [](#server)Server
 
-|![Java](https://github.com/slside/Baekjoon/assets/132821972/5ab2d12b-10e1-4135-9048-f6d4abe6c15e){: width="250" height="450"} | ![Sprinhg Boot](https://github.com/slside/Baekjoon/assets/132821972/327faaae-f055-438a-8636-9d52734e9779){: width="250" height="450"}|
+|![Java](https://github.com/slside/Baekjoon/assets/132821972/5ab2d12b-10e1-4135-9048-f6d4abe6c15e){: width="250" height="450"}|![Sprinhg Boot](https://github.com/slside/Baekjoon/assets/132821972/327faaae-f055-438a-8636-9d52734e9779){: width="250" height="450"}|
 |:---:|:---:|
 |Java|Spring Boot|
