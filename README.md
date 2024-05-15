@@ -10,8 +10,8 @@
 3. [주요 기능](#주요기능)
 4. [세부 기능](#세부기능)
 5. [아키텍쳐](#아키텍쳐)
-6. [팀원 소개](#팀원소개)
-7. [ERD](#ERD)
+6. [ERD](#ERD)
+7. [팀원 소개](#팀원소개)
 8. [사용 예시](#사용예시)
 
 <a name="서비스소개"></a>
@@ -65,6 +65,12 @@
 
 ## 아키텍쳐
 
+
+## ERD
+
+![image](https://github.com/sunhyeok99/Baekjoon/assets/132821972/d17f4b05-2fde-40d2-a5b9-1f6f1e38407d)
+
+
 <a name="팀원소개"></a>
 ## 팀원 소개
 
@@ -74,9 +80,6 @@
 |팀장, Infra, AI|Frontend|Frontend|Backend, AI|Backend, AI|Backend, Frontend|
 
 
-## ERD
-
-![image](https://github.com/sunhyeok99/Baekjoon/assets/132821972/d17f4b05-2fde-40d2-a5b9-1f6f1e38407d)
 
 <a name="사용예시"></a>
 ## 사용 예시
