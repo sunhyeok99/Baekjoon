@@ -1,5 +1,5 @@
 
-![image](https://github.com/sunhyeok99/Baekjoon/assets/132821972/35a05e83-ef44-42f5-b373-d77c376f2e86)
+<img src="https://github.com/sunhyeok99/Baekjoon/assets/132821972/35a05e83-ef44-42f5-b373-d77c376f2e86" width="500" height="500">
  
 # 동꾸 (동화 꾸미기)
 
