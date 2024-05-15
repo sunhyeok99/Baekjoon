@@ -7,21 +7,21 @@
 
 1. [서비스 소개](#서비스소개)
 2. [기술스택](#기술스택)
-3. [기능 리스트](#기능리스트)
-4. [아키텍쳐](#아키텍쳐)
-5. [ERD](#ERD)
-6. [주요 페이지 목업](#주요페이지목업)
-7. [팀원소개](#팀원소개)
-8. [개선과정](#개선과정)
+3. [주요 기능](#주요기능)
+4. [세부 기능](#세부기능)
+5. [아키텍쳐](#아키텍쳐)
+6. [팀원 소개](#팀원소개)
+7. [ERD](#ERD)
+8. [사용 예시](#사용예시)
 
 ## 서비스 소개
-동꾸(동화 꾸미기)는 
+동꾸(동화 꾸미기)는 아이들이 직접 그린 그림 또는 업로드한 사진을 바탕으로 동화를 제작해주는 서비스입니다.
 
 ## 기술스택
 
 ### Front-end
 
-|![React](https://camo.githubusercontent.com/91b30ff3d7d15143c1dbba499a8ad310bd829fbd45f65cacaeea175fac5d85aa/68747470733a2f2f70726f66696c696e61746f722e7269736861762e6465762f736b696c6c732d6173736574732f72656163742d6f726967696e616c2d776f72646d61726b2e737667){: width="30" height="30"}|![Node.js](https://camo.githubusercontent.com/9ff307d218aae4aa07155c709b7d3b5719a05c928b9eb60ed982ca7221fafcb9/68747470733a2f2f75706c6f61642e77696b696d656469612e6f72672f77696b6970656469612f636f6d6d6f6e732f7468756d622f642f64392f4e6f64652e6a735f6c6f676f2e7376672f3132303070782d4e6f64652e6a735f6c6f676f2e7376672e706e67){: width="30" height="30"}|![Nest.js](https://github.com/sunhyeok99/Baekjoon/assets/132821972/8107f138-fd82-4bf6-9af0-1261959c7a63){: width="30" height="30"}
+|<img src="https://camo.githubusercontent.com/91b30ff3d7d15143c1dbba499a8ad310bd829fbd45f65cacaeea175fac5d85aa/68747470733a2f2f70726f66696c696e61746f722e7269736861762e6465762f736b696c6c732d6173736574732f72656163742d6f726967696e616c2d776f72646d61726b2e737667" width="80" height="80">|<img src="https://camo.githubusercontent.com/9ff307d218aae4aa07155c709b7d3b5719a05c928b9eb60ed982ca7221fafcb9/68747470733a2f2f75706c6f61642e77696b696d656469612e6f72672f77696b6970656469612f636f6d6d6f6e732f7468756d622f642f64392f4e6f64652e6a735f6c6f676f2e7376672f3132303070782d4e6f64652e6a735f6c6f676f2e7376672e706e67" width="80" height="80">|<img src="https://github.com/sunhyeok99/Baekjoon/assets/132821972/57a17051-c932-4239-a92e-32b5e353fd39" width="80" height="80">|
 |:---:|:---:|:---:|
 |React|Node.js|Nest.js|
 
@@ -31,11 +31,56 @@
 |:---:|:---:|:---:|
 |Java|Spring Boot|MySQL|
 
-|![Postman](https://github.com/sunhyeok99/Baekjoon/assets/132821972/299cd1d8-5277-4809-a95c-c4a23dbf0e83){: width="30" height="30"}|<img src="https://github.com/sunhyeok99/Baekjoon/assets/132821972/2220cf95-98ce-422f-a288-b7d663f6c628" width="70" height="70">|
+|<img src="https://github.com/sunhyeok99/Baekjoon/assets/132821972/299cd1d8-5277-4809-a95c-c4a23dbf0e83" width="80" height="80">|<img src="https://github.com/sunhyeok99/Baekjoon/assets/132821972/2220cf95-98ce-422f-a288-b7d663f6c628" width="80" height="80">|
 |:---:|:---:|
 |Postman|Swagger|
 
 ### Infra
 
-<img src="/img/myImg.png" width="300" height="300">
-![Swagger](https://github.com/sunhyeok99/Baekjoon/assets/132821972/2220cf95-98ce-422f-a288-b7d663f6c628){: width="30" height="30"}|
+|<img src="https://camo.githubusercontent.com/f04aba7d8ad4c0e6146a7c7486b11b8f13481fee27cafeda1bde65872545b345/68747470733a2f2f70726f66696c696e61746f722e7269736861762e6465762f736b696c6c732d6173736574732f6e67696e782d6f726967696e616c2e737667" width="80" height="80">|<img src="https://camo.githubusercontent.com/ec906dafb1dbc5adc0a2dac56db0cbfb837a88162bf8627593c771fdb56334d2/68747470733a2f2f75706c6f61642e77696b696d656469612e6f72672f77696b6970656469612f636f6d6d6f6e732f7468756d622f652f65392f4a656e6b696e735f6c6f676f2e7376672f3132303070782d4a656e6b696e735f6c6f676f2e7376672e706e67" width="80" height="80">|<img src="https://camo.githubusercontent.com/dfc2d70a6470edf31eba1520328b6c8398275ab22ab7aa481d12c9ece3edeb15/68747470733a2f2f7062732e7477696d672e636f6d2f70726f66696c655f696d616765732f313335313730323936373536313235323836352f61586663455449745f343030783430302e6a7067" width="80" height="80">|
+|:---:|:---:|:---:|
+|NGiNX|Jenkins|aws|
+
+
+## 주요 기능
+
+- 나이대 별 아이에게 맞는 동화 생성
+- 나이에 따른 동화 추천
+- 내가 만든 동화 자동재생
+  
+## 세부 기능
+
+|기능|내용|
+|:---:|:---:|
+|동화 생성||
+|:---:|:---:|
+|드로잉 시스템||
+|:---:|:---:|
+|동화 리딩 서비스||
+|:---:|:---:|
+|자동재생||
+|:---:|:---:|
+|퍼즐게임||
+|:---:|:---:|
+|반응형 웹 제공||
+
+
+## 아키텍쳐
+
+
+## 팀원 소개
+
+|이건희|박지원|김연화|이진규|김선혁|최영진|
+|:---:|:---:|:---:|:---:|:---:|:---:|
+|사진|사진|사진|사진|사진|사진|
+|:---:|:---:|:---:|:---:|:---:|:---:|
+|팀장, Infra, AI|Frontend|Frontend|Backend, AI|Backend, AI|Backend, Frontend|
+
+
+## ERD
+
+![image](https://github.com/sunhyeok99/Baekjoon/assets/132821972/d17f4b05-2fde-40d2-a5b9-1f6f1e38407d)
+
+
+## 사용 예시
+
