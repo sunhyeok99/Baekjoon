@@ -19,8 +19,26 @@
 
 ## 기술스택
 
-### [](#server)Server
+### Front-end
 
-|![Java](https://github.com/slside/Baekjoon/assets/132821972/5ab2d12b-10e1-4135-9048-f6d4abe6c15e){: width="250" height="450"}|![Sprinhg Boot](https://github.com/slside/Baekjoon/assets/132821972/327faaae-f055-438a-8636-9d52734e9779){: width="250" height="450"}|
+|![Java](https://camo.githubusercontent.com/ecd535b833a6520e8d8238ceffadb3b3dda6e854826193d419c305f3e52fee22/68747470733a2f2f70726f66696c696e61746f722e7269736861762e6465762f736b696c6c732d6173736574732f6a6176612d6f726967696e616c2d776f72646d61726b2e737667){: width="250" height="450"}|![Sprinhg Boot](![image](https://github.com/sunhyeok99/Baekjoon/assets/132821972/9bf23036-21cf-4da6-9111-6efbcef767f0))){: width="250" height="450"}|
 |:---:|:---:|
 |Java|Spring Boot|
+
+|![Java](){: width="250" height="450"}|![Sprinhg Boot](){: width="250" height="450"}|
+|:---:|:---:|
+|Java|Spring Boot|
+
+### Back-end
+
+|![Java](){: width="250" height="450"}|![Sprinhg Boot](){: width="250" height="450"}|
+|:---:|:---:|
+|Java|Spring Boot|
+
+|![Java](){: width="250" height="450"}|![Sprinhg Boot](){: width="250" height="450"}|
+|:---:|:---:|
+|Java|Spring Boot|
+
+### Infra
+
+
