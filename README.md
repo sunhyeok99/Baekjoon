@@ -1,5 +1,5 @@
 
-<center><img src="https://github.com/sunhyeok99/Baekjoon/assets/132821972/df369c86-190d-4e23-ae7f-db0e64094435" width="900" height="600"></center>
+<center><img src="https://github.com/sunhyeok99/Baekjoon/assets/132821972/df369c86-190d-4e23-ae7f-db0e64094435" width="1000" height="600"></center>
 
 
 # <center><img src="https://github.com/sunhyeok99/Baekjoon/assets/132821972/35a05e83-ef44-42f5-b373-d77c376f2e86" width="90" height="75"></center> 동꾸 (동화 꾸미기) 
