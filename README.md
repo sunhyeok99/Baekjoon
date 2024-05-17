@@ -4,16 +4,26 @@
 # 동꾸 (동화 꾸미기)
 동꾸(동화 꾸미기)는 아이가 직접 만들어가는 AI 동화 창작 서비스입니다.
 
-## 목차
+## 개발 기간
 
-1. [기술스택](#기술스택)
-2. [주요 기능](#주요기능)
-3. [세부 기능](#세부기능)
-4. [아키텍쳐](#아키텍쳐)
-5. [ERD](#ERD)
-6. [팀원 소개](#팀원소개)
-7. [사용 예시](#사용예시)
-8. [변화 과정](#변화과정)
+|개발기간|2024-04-08 ~ 2024-05-20 (6주)|
+|---|---|
+
+## 팀원 소개
+
+|이건희|박지원|김연화|이진규|김선혁|최영진|
+|:---:|:---:|:---:|:---:|:---:|:---:|
+|사진|사진|사진|사진|사진|사진|
+|팀장, Infra, AI|Frontend|Frontend|Backend, AI|Backend, AI|Backend, Frontend|
+
+## 기획 배경
+
+|어린이들의 유투브 과도한 시청|
+|수동적인 참여와 제한적인 사고|
+|---|
+
+## 서비스 목표
+### 아이들의 능동적으로 참여하고, 아이들의 창의력과 인지능력 상승을 할 수 있는 서비스
 
 ## 기술스택
 
@@ -41,14 +51,14 @@
 |:---:|:---:|:---:|:---:|
 |OpenAi|StableDiffusion|MySQL|Gerrit|
 
-<a name="주요기능"></a>
+
 ## 주요 기능
 
 - 아이가 그린 그림으로 나이대 별 동화 생성
 - 나이에 따라 다른 아이가 만든 동화 추천
 - 내가 만든 동화 자동재생 기능
 
-<a name="세부기능"></a>
+
 ## 세부 기능
 
 |기능|내용|
@@ -68,28 +78,18 @@
 ![image](https://github.com/sunhyeok99/Baekjoon/assets/132821972/d17f4b05-2fde-40d2-a5b9-1f6f1e38407d)
 
 
-<a name="팀원소개"></a>
-## 팀원 소개
 
-|이건희|박지원|김연화|이진규|김선혁|최영진|
-|:---:|:---:|:---:|:---:|:---:|:---:|
-|사진|사진|사진|사진|사진|사진|
-|팀장, Infra, AI|Frontend|Frontend|Backend, AI|Backend, AI|Backend, Frontend|
-
-
-
-<a name="사용예시"></a>
-## 사용 예시
 
 
 
 ## 변화 과정
 
-![image](https://github.com/sunhyeok99/Baekjoon/assets/132821972/a141995c-cf38-4714-a274-99c92cfd171c)
 
-![image](https://github.com/sunhyeok99/Baekjoon/assets/132821972/e2152a95-365c-464c-952e-a13211d19e96)
 ![image](https://github.com/sunhyeok99/Baekjoon/assets/132821972/60866baa-07ce-4478-a8ab-8d920d7828cf)
 
 
+### 기존의 
 ![image](https://github.com/sunhyeok99/Baekjoon/assets/132821972/a141995c-cf38-4714-a274-99c92cfd171c) | ![image](https://github.com/sunhyeok99/Baekjoon/assets/132821972/e2152a95-365c-464c-952e-a13211d19e96)
 ---|---|
+
+## 사용 예시
