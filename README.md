@@ -2,7 +2,7 @@
 <center><img src="https://github.com/sunhyeok99/Baekjoon/assets/132821972/35a05e83-ef44-42f5-b373-d77c376f2e86" width="720" height="600"></center>
  
 # 동꾸 (동화 꾸미기)
-동꾸(동화 꾸미기)는 아이들이 직접 그린 그림 또는 업로드한 사진을 바탕으로 동화를 제작해주는 서비스입니다.
+동꾸(동화 꾸미기)는 아이가 직접 만들어가는 AI 동화 창작 서비스입니다.
 
 ## 목차
 
@@ -13,8 +13,7 @@
 5. [ERD](#ERD)
 6. [팀원 소개](#팀원소개)
 7. [사용 예시](#사용예시)
-
-<a name="서비스소개"></a>
+8. [변화 과정](#변화과정)
 
 ## 기술스택
 
@@ -45,21 +44,20 @@
 <a name="주요기능"></a>
 ## 주요 기능
 
-- 나이대 별 아이에게 맞는 동화 생성
-- 나이에 따른 동화 추천
-- 내가 만든 동화 자동재생
+- 아이가 그린 그림으로 나이대 별 동화 생성
+- 나이에 따라 다른 아이가 만든 동화 추천
+- 내가 만든 동화 자동재생 기능
 
 <a name="세부기능"></a>
 ## 세부 기능
 
 |기능|내용|
 |:---:|:---:|
-|동화 생성||
-|드로잉 시스템||
-|동화 리딩 서비스||
-|자동재생||
-|퍼즐게임||
-|반응형 웹 제공||
+|동화 생성|동화를 생성하는 아이의 나이에 따라서 동화의 길이, 말투, 사용되는 단어 등을 다르게 생성한다.|
+|그림 드로잉 기능|아이가 직접 그림을 그릴 수 있으며 그린 그림을 저장할 수 있다.|
+|동화 TTS 기능|동화를 감상할 때 동화 스토리에 해당하는 내용을 음성으로 지원한다.|
+|자동재생|아이가 생성한 동화들을 자동재생을 통하여 감상할 수 있다.|
+|퍼즐놀이|2X2 크기부터 4X4 크기까지 완성되어 있는 정답 그림을 참고하여 퍼즐놀이를 즐길 수 있다.|
 
 
 ## 아키텍쳐
@@ -83,3 +81,16 @@
 <a name="사용예시"></a>
 ## 사용 예시
 
+
+
+## 변화 과정
+
+![image](https://github.com/sunhyeok99/Baekjoon/assets/132821972/a141995c-cf38-4714-a274-99c92cfd171c)
+
+![image](https://github.com/sunhyeok99/Baekjoon/assets/132821972/e2152a95-365c-464c-952e-a13211d19e96)
+
+<p align="center">  <img src="[이미지경로](https://github.com/sunhyeok99/Baekjoon/assets/132821972/a141995c-cf38-4714-a274-99c92cfd171c)" align="center" width="32%">  <img src="[이미지경로](https://github.com/sunhyeok99/Baekjoon/assets/132821972/e2152a95-365c-464c-952e-a13211d19e96)" align="center" width="32%">  <img src="[이미지경로](https://github.com/sunhyeok99/Baekjoon/assets/132821972/60866baa-07ce-4478-a8ab-8d920d7828cf)" align="center" width="32%">  <figcaption align="center">3개 이미지 띄우기</figcaption></p>
+출처: https://0soo.tistory.com/227 [Lifealong:티스토리]
+
+
+![image](https://github.com/sunhyeok99/Baekjoon/assets/132821972/60866baa-07ce-4478-a8ab-8d920d7828cf)
