@@ -15,7 +15,7 @@
 ### 팀원 소개
 |이건희|박지원|김연화|이진규|김선혁|최영진|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|사진|사진|사진|사진|사진|사진|
+|<img src="https://github.com/sunhyeok99/Baekjoon/assets/132821972/baebca60-5144-4f2c-88df-8654ecdb0630" width="70" height="100">|사진|사진|사진|사진|사진|
 |팀장, Infra, AI|Frontend|Frontend|Backend, AI|Backend, AI|Backend, Frontend|
 
 ### 기획 배경
@@ -133,6 +133,8 @@
 ***
 
 ## 4. 아키텍쳐
+
+![image](https://github.com/sunhyeok99/Baekjoon/assets/132821972/2fb81b05-13fd-499a-8873-f2bbb0c738d8)
 
 ***
 
