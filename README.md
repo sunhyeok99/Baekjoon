@@ -1,4 +1,4 @@
-
+![이진규-removebg-preview](https://github.com/sunhyeok99/Baekjoon/assets/132821972/1e4c7085-fe2a-428e-85d2-81179d21569b)
 <center><img src="https://github.com/sunhyeok99/Baekjoon/assets/132821972/df369c86-190d-4e23-ae7f-db0e64094435" width="1000" height="600"></center>
 
 
@@ -15,7 +15,7 @@
 ### 팀원 소개
 |이건희|박지원|김연화|이진규|김선혁|최영진|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|<img src="https://github.com/sunhyeok99/Baekjoon/assets/132821972/baebca60-5144-4f2c-88df-8654ecdb0630" width="70" height="100">|사진|사진|사진|사진|사진|
+|<img src="https://github.com/sunhyeok99/Baekjoon/assets/132821972/baebca60-5144-4f2c-88df-8654ecdb0630" width="70" height="100">|<img src="https://github.com/sunhyeok99/Baekjoon/assets/132821972/4c9f5efd-cffc-42ab-8946-9a33c30b2751" width="70" height="100">|<img src="https://github.com/sunhyeok99/Baekjoon/assets/132821972/7f39161b-ba1e-441e-8b45-a79600b1028f" width="70" height="100">|<img src="https://github.com/sunhyeok99/Baekjoon/assets/132821972/7a3594f9-91aa-4131-8f5c-59bf755788d2" width="70" height="100">|<img src="https://github.com/sunhyeok99/Baekjoon/assets/132821972/7ce97644-5a46-44ec-820f-e1b6e492c66b" width="70" height="100">|<img src="https://github.com/sunhyeok99/Baekjoon/assets/132821972/c2066cd2-4a89-4fa1-90db-4ed5427dd8a6" width="70" height="100">|
 |팀장, Infra, AI|Frontend|Frontend|Backend, AI|Backend, AI|Backend, Frontend|
 
 ### 기획 배경
