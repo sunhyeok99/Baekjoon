@@ -1,4 +1,4 @@
-![2024_05_19 23_41_1 (3)](https://github.com/sunhyeok99/Baekjoon/assets/132821972/4b8df413-9b9c-44fa-a1a4-d2e353513400)<center><img src="https://github.com/sunhyeok99/Baekjoon/assets/132821972/df369c86-190d-4e23-ae7f-db0e64094435" width="1000" height="600"></center>
+<center><img src="https://github.com/sunhyeok99/Baekjoon/assets/132821972/df369c86-190d-4e23-ae7f-db0e64094435" width="1000" height="600"></center>
 
 
 # <center><img src="https://github.com/sunhyeok99/Baekjoon/assets/132821972/35a05e83-ef44-42f5-b373-d77c376f2e86" width="90" height="75"></center> 동꾸 (동화 꾸미기) 
@@ -76,7 +76,7 @@
 
 |랜딩 페이지|
 |:---:|
-|![2024_05_19 23_41_1 (3)](https://github.com/sunhyeok99/Baekjoon/assets/132821972/bbcc777f-6ba8-4bfe-aff1-229084d853d2|
+|![2024_05_19 23_41_1 (3)](https://github.com/sunhyeok99/Baekjoon/assets/132821972/4b8df413-9b9c-44fa-a1a4-d2e353513400)|
 
 - 처음 사이트를 방문하게 되면 저희 서비스를 전체적으로 이해할 수 있는 랜딩 페이지가 나오게 됩니다.
 - 이후 로그인이 된 상태이면 재방문해도 뜨지 않습니다.
