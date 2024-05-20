@@ -50,7 +50,7 @@
 
 ### ETC
 
-|<img src="https://github.com/sunhyeok99/Baekjoon/assets/132821972/ccde63b3-aac9-421d-bab3-b4d025bfe45f" width="70" height="70">| <center><img src="https://github.com/sunhyeok99/Baekjoon/assets/132821972/94b36549-0f11-49ce-a0c9-5102e16f6b65" width="70" height="70"></center> |<img src="https://github.com/sunhyeok99/Baekjoon/assets/132821972/2efd254f-fa07-4648-b649-0c51e905e0c9" width="70" height="70">|<img src="https://github.com/sunhyeok99/Baekjoon/assets/132821972/52ceb0cb-38b8-4306-affe-22cf722c66ab" width="70" height="70">|<img src="https://github.com/sunhyeok99/Baekjoon/assets/132821972/a5fac266-2dd7-42c8-82a4-e7da9e5d00cf" width="70" height="70">|
+|<img src="https://github.com/sunhyeok99/Baekjoon/assets/132821972/ccde63b3-aac9-421d-bab3-b4d025bfe45f" width="70" height="70">| <center><img src="https://github.com/sunhyeok99/Baekjoon/assets/132821972/94b36549-0f11-49ce-a0c9-5102e16f6b65" width="70" height="70"></center> |<img src="https://github.com/sunhyeok99/Baekjoon/assets/132821972/2efd254f-fa07-4648-b649-0c51e905e0c9" width="70" height="70">|<img src="https://github.com/sunhyeok99/Baekjoon/assets/132821972/52ceb0cb-38b8-4306-affe-22cf722c66ab" width="70" height="70">|<img src="https://github.com/sunhyeok99/Baekjoon/assets/132821972/a5fac266-2dd7-42c8-82a4-e7da9e5d00cf" width="80" height="70">|
 |:---:|:---:|:---:|:---:|:---:|
 |OpenAi|StableDiffusion|MySQL|Gerrit|Jira|
 
