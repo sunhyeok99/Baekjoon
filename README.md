@@ -74,7 +74,7 @@
 
 |퍼즐 게임|마이 페이지|
 |:---:|:---:|
-|<img src="https://github.com/sunhyeok99/Baekjoon/assets/132821972/165a2c18-d777-4953-ad5f-02cf3d039d71" width="500" height="350">|<img src="https://github.com/sunhyeok99/Baekjoon/assets/132821972/165a2c18-d777-4953-ad5f-02cf3d039d71" width="500" height="350">|
+|<img src="https://github.com/sunhyeok99/Baekjoon/assets/132821972/165a2c18-d777-4953-ad5f-02cf3d039d71" width="450" height="300">|<img src="https://github.com/sunhyeok99/Baekjoon/assets/132821972/165a2c18-d777-4953-ad5f-02cf3d039d71" width="450" height="300">|
 
 ***
 
