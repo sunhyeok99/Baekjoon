@@ -4,7 +4,7 @@
 # <center><img src="../img/logoonlybook.png"  width="90"  height="75" /></center> 동꾸 (동화 꾸미기) 
 ### 동꾸(동화 꾸미기)는 아이가 직접 만들어가는 AI 동화 창작 서비스입니다.
 
-<center>![동화꾸미기메인1.gif](../img/동화꾸미기메인1.gif)</center>
+<center></center>
 
 ## 1. 프로젝트 개요
 
@@ -63,7 +63,7 @@
 
 |메인 페이지|그림 드로잉 페이지|
 |:---:|:---:|
-|<img src="https://github.com/sunhyeok99/Baekjoon/assets/132821972/4b8df413-9b9c-44fa-a1a4-d2e353513400" width="470" height="260">|<img src="https://github.com/sunhyeok99/Baekjoon/assets/132821972/adfaead3-e70e-4d5d-a6dc-e0b13cf4febf" width="470" height="260">|
+|<img src="https://lab.ssafy.com/s10-final/S10P31A402/-/raw/develop/img/%EB%8F%99%ED%99%94%EA%BE%B8%EB%AF%B8%EA%B8%B0%EB%A9%94%EC%9D%B81.gif" width="470" height="260">|<img src="https://github.com/sunhyeok99/Baekjoon/assets/132821972/adfaead3-e70e-4d5d-a6dc-e0b13cf4febf" width="470" height="260">|
 
 |랜딩 페이지|아이 선택 페이지|
 |:---:|:---:|
@@ -75,7 +75,7 @@
 
 |퍼즐 게임|마이 페이지|
 |:---:|:---:|
-|<img src="https://github.com/sunhyeok99/Baekjoon/assets/132821972/165a2c18-d777-4953-ad5f-02cf3d039d71" width="470" height="260">|<img src="https://github.com/sunhyeok99/Baekjoon/assets/132821972/165a2c18-d777-4953-ad5f-02cf3d039d71" width="470" height="260">|
+|<img src="https://github.com/sunhyeok99/Baekjoon/assets/132821972/165a2c18-d777-4953-ad5f-02cf3d039d71" width="470" height="260">|<img src="https://github.com/sunhyeok99/Baekjoon/assets/132821972/fa88c186-9d53-4dd7-9d58-b2ff7bd2420e" width="470" height="260">|
 
 ***
 
