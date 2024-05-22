@@ -62,19 +62,19 @@
 
 |메인 페이지|그림 드로잉 페이지|
 |:---:|:---:|
-|![2024_05_19 23_41_1 (3)](https://github.com/sunhyeok99/Baekjoon/assets/132821972/4b8df413-9b9c-44fa-a1a4-d2e353513400)|![그림](https://github.com/sunhyeok99/Baekjoon/assets/132821972/adfaead3-e70e-4d5d-a6dc-e0b13cf4febf)|
+|<img src="https://github.com/sunhyeok99/Baekjoon/assets/132821972/4b8df413-9b9c-44fa-a1a4-d2e353513400" width="470" height="260">|<img src="https://github.com/sunhyeok99/Baekjoon/assets/132821972/adfaead3-e70e-4d5d-a6dc-e0b13cf4febf" width="470" height="260">|
 
 |랜딩 페이지|아이 선택 페이지|
 |:---:|:---:|
-|![2024_05_19 23_41_1 (3)](https://github.com/sunhyeok99/Baekjoon/assets/132821972/4b8df413-9b9c-44fa-a1a4-d2e353513400)|![아이선택](https://github.com/sunhyeok99/Baekjoon/assets/132821972/24041dfa-9922-4f10-a38c-aa49b16277b2)|
+|<img src="https://github.com/sunhyeok99/Baekjoon/assets/132821972/4b8df413-9b9c-44fa-a1a4-d2e353513400" width="470" height="260">|<img src="https://github.com/sunhyeok99/Baekjoon/assets/132821972/24041dfa-9922-4f10-a38c-aa49b16277b2" width="470" height="260">|
 
 |동화 감상 페이지|다른 동화 추천 및 선택 페이지|
 |:---:|:---:|
-|![동화보기](https://github.com/sunhyeok99/Baekjoon/assets/132821972/ae25f0b9-d387-46da-b1fa-8c61e65598b5)|![동화추천](https://github.com/sunhyeok99/Baekjoon/assets/132821972/aacfc9a3-f2bf-4476-a959-7158a5ceece8)|
+|<img src="https://github.com/sunhyeok99/Baekjoon/assets/132821972/ae25f0b9-d387-46da-b1fa-8c61e65598b5" width="470" height="260">|<img src="https://github.com/sunhyeok99/Baekjoon/assets/132821972/aacfc9a3-f2bf-4476-a959-7158a5ceece8" width="470" height="260">|
 
 |퍼즐 게임|마이 페이지|
 |:---:|:---:|
-|<img src="https://github.com/sunhyeok99/Baekjoon/assets/132821972/165a2c18-d777-4953-ad5f-02cf3d039d71" width="470" height="270">|<img src="https://github.com/sunhyeok99/Baekjoon/assets/132821972/165a2c18-d777-4953-ad5f-02cf3d039d71" width="470" height="270">|
+|<img src="https://github.com/sunhyeok99/Baekjoon/assets/132821972/165a2c18-d777-4953-ad5f-02cf3d039d71" width="470" height="260">|<img src="https://github.com/sunhyeok99/Baekjoon/assets/132821972/165a2c18-d777-4953-ad5f-02cf3d039d71" width="470" height="260">|
 
 ***
 
