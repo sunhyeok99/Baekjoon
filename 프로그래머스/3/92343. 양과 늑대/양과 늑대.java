@@ -47,16 +47,11 @@ class Solution {
         
         // 현재위치는 제거해야함
         ArrayList<Integer> tmp = new ArrayList<>(list); // list 복제
-        int index = tmp.indexOf(idx);
-        if(index != -1){
-         tmp.remove(index);
-        }
+         tmp.remove(tmp.indexOf(idx));
         
-        if (ar[idx] != null) {
             for (int i = 0; i < ar[idx].size(); i++) {
                 tmp.add(ar[idx].get(i));
             }
-        }
       
         // 모든 점 dfs
         for(int i = 0;i<tmp.size();i++){
