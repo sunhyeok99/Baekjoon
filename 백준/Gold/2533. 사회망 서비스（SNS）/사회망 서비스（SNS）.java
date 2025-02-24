@@ -1,7 +1,7 @@
 import java.util.*;
 
 public class Main {
-    static int N, M;
+    static int N;
     static ArrayList<Integer>[] ar;
     static int[][] dp;
     static int ans;
@@ -32,7 +32,6 @@ public class Main {
     public static void solve(int parent, int x){
         // 여기가 얼리어답터 일경우에는 다음 브랜치가 상관없고,
         // 아니면 다음 브랜치는 무조건 얼리어답터 이어야한다.
-        dp[x][0] =0;
         dp[x][1] =1;
 
         for(int i = 0; i < ar[x].size(); i++){
