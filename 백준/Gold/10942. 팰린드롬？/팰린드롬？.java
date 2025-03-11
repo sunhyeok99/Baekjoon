@@ -4,54 +4,53 @@ import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
 public class Main {
-    public static void main(String[] args) throws IOException {
+
+    static int N, M;
+    static int[] arr;
+    public static void main(String[] args) throws IOException, IOException {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-
-        int n = Integer.parseInt(reader.readLine());
-        int[] nums = new int[n+1];
-
-        StringTokenizer st = new StringTokenizer(reader.readLine());
-        for (int i=1; i<=n; i++) {
-            nums[i] = Integer.parseInt(st.nextToken());
-        }
-
-        int m = Integer.parseInt(reader.readLine());
-
+        N = Integer.parseInt(reader.readLine());        // 투포인터 써보자
+        arr = new int[N+1];
         StringBuilder sb = new StringBuilder();
+        StringTokenizer st = new StringTokenizer(reader.readLine());
 
-        while (m-- > 0) {
-
+        for(int i = 1; i <= N;i++){
+            arr[i] = Integer.parseInt(st.nextToken());
+        }
+        M = Integer.parseInt(reader.readLine());
+        for(int i = 1; i <= M;i++){
+            // 투포인터 진행
             st = new StringTokenizer(reader.readLine());
-
-            int left = Integer.parseInt(st.nextToken());
-            int right = Integer.parseInt(st.nextToken());
-
-            if(isPelin(nums,left,right)) {
-                sb.append("1\n");
-            } else {
-                sb.append("0\n");
+            int a = Integer.parseInt(st.nextToken());
+            int b = Integer.parseInt(st.nextToken());
+            boolean flag = false;
+            while(a < b){
+                if(arr[a] != arr[b]){
+                    flag = true;
+                    break;
+                }
+                a++;
+                b--;
             }
 
-        }//while
+            if(flag){
+                sb.append("0\n");
+            }
+            else{
+                sb.append("1\n");
+            }
 
-        System.out.print(sb);
+        }
+
+            System.out.println(sb);
+
+
+
+
 
 
     }
 
-    private static boolean isPelin(int[] nums, int left, int right) {
 
-        while (left <= right) {
-            if (nums[left] != nums[right]) {
-                return false;
-            }
-
-            left++;
-            right--;
-        }//while
-
-        return true;
-    }//isPlein
 
 }
-
